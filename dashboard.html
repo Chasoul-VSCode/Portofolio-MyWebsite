@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="" href="" />
+
+  <!-- Put your site title here -->
+  <title>
+    Chasoul vs Code | Web Developer
+  </title>
+
+  <meta name="description" content="Add small description of yourslef.">
+  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
+  <meta name="keywords" content="Put your name, skills and some coding keywords" />
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+
+<style>
+  .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  border-radius: 20px; /* adds border radius */
+  transition: background-color 0.3s ease;
+}
+
+.about__photo-container {
+    /* Adjust the container to fit the photo */
+    text-align: center; /* Center the photo */
+  }
+
+  .about__photo {
+    /* Control the size of the photo */
+    max-width: 250px; /* Adjust to desired width */
+    height: auto; /* Maintain aspect ratio */
+  }
+</style>
+<body>
+
+  <!-- ***** Header ***** -->
+
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="https://github.com/Chasoul-VSCode" class="nav__link">Github</a></li>
+          <li class="nav__item"><a href="https://www.instagram.com/chasoul.ux/" class="nav__link">Instagram</a></li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">Project</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">logout</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <!-- Replace the following name with your name -->
+          <span>Chasoul Shaa Shibusawa</span>
+        </h1>
+        <!-- Put a small paragraph about yourself -->
+        <p>🏅Former International Agency <br> Talent Scout and Data Analyst @2021</p> 
+        <hr>
+        <p> | Specialyst Website Developer | Laravel - JavaScript - CSS | </p>
+        <a id="validationButton" class="btn btn--pink" href="#about">Contact Us</a>
+           </div>
+    </div>
+  </header>
+
+  <main role="main">
+    <section class="about" id="about">
+      <div class="row">
+        <h3>About Me</h3>
+        <div class="about__content">
+          <div class="about__text">
+            <!-- Replace the below paragraph with info about yourself -->
+            <p>
+              I am a 4Th semester Informatics Engineering student with one year of experience working
+              as a data analyst and agent at an international agency. 
+              I am deepening my knowledge in front-end development with Laravel as a web developer.
+            </p>
+            <!-- Provide a link to your resume -->
+            <a target="_blank" class="btn" onclick="enterPassword()"> My CV</a>
+          </div>
+
+          <div class="about__photo-container" style="opacity: 60%; ">
+            <!-- Add a nice photo of yourself -->
+            <img class="about__photo" src="./images/myphoto.jpg" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ***** Work ***** -->
+
+    <section class="work" id="work">
+      <div class="row">
+        <div class="work__boxes">
+
+          <!-- Each div with the work__box class is a project. -->
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>My Github Account</h3>
+              <p>
+                All coding projects that I work on, I will upload them to my personal GitHub link
+              </p>
+              <ul class="work__list">
+                <li>HTML</li>
+                <li>SCSS</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://github.com/Chasoul-Shibusawa" target="_blank" class="link__text">
+                  Go to My Github<span>&rarr;</span>
+                </a>
+                <a href="" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/MyGithub.png" class="work__image" alt="" />
+            </div>
+          </div>
+
+          <h2>My Project</h2>
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Resto and Cafe</h3>
+              <ul class="work__list">
+                <li>HTML</li>
+                <li>SCSS</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://chasoul-shibusawa.github.io/Resto-And-Cafe-Trade/" target="_blank" class="link__text">
+                  Go to My Project<span>&rarr;</span>
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/restoandcafe.png" class="work__image" alt="" />
+              <img src="./images/aboutresto.png" class="work__image" alt="" />
+              <img src="./images/menuresto.png" class="work__image" alt="" />
+            </div>
+          </div>
+
+
+    </section>
+
+    <!-- My Project E-Learning -->
+    <section class="work" id="store">
+      <div class="row">
+        <h2>My Online Store</h2>
+        <div class="work__boxes">
+
+          <!-- Each div with the work__box class is a project. -->
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>SCOS Online Store</h3>
+              <p>
+                Online store 100% original brand. Used and items like new
+              </p>
+              <ul class="work__list">
+                <li>ZARA</li>
+                <li>UNIQLO</li>
+                <li>H&M</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://shopee.co.id/shaciaostore" target="_blank" class="link__text">
+                  Go to Store <span>&rarr;</span>
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/Storee.jpg" class="store_image" alt="" width="100%" style="float:right; opacity: 70%;" />
+            </div>
+          </div>
+    </section>
+
+    <!-- ***** About ***** -->
+
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About Me</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <!-- Replace the below paragraph with info about yourself -->
+            <p>
+              I am a former international agency worker 2021, the position I worked in was a talent scout and also a data analyst.
+               I have a career in the world of code because I like things that use logic to do them
+            </p>
+            <!-- Provide a link to your resume -->
+            <a target="_blank" class="btn" onclick="enterPassword()"> My CV "Only HRD can Access"</a>
+          </div>
+
+          <div class="about__photo-container" style="opacity: 60%;">
+            <!-- Add a nice photo of yourself -->
+            <img class="about__photo" src="./images/myphoto.jpg" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function enterPassword() {
+          var password = prompt("Enter the password:");
+          if (password === "131122") {
+              window.open("cv.html", "_blank");
+          } else {
+              alert("Sorry, You cant access my website");
+              window.location.href = "#about";
+          }
+      }
+  </script>
+  </main>
+
+  <!-- ***** Contact ***** -->
+
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>About My Portofolio Web Design</h2>
+      
+        <div class="work__box">
+          <div class="work__text">
+            <ul class="work__list" >
+              <li>HTML</li>
+              <li>SCSS</li>
+              <li>JavaScript</li>
+            </ul>
+
+            <div class="work__links">
+              <a href="https://github.com/Chasoul-Shibusawa" target="_blank" class="link__text">
+                Visit Site <span>&rarr;</span>
+              </a>
+              <a href="https://github.com/Chasoul-Shibusawa" title="View Source Code" target="_blank">
+                <img src="./images/github.svg" class="work__code" alt="GitHub">
+              </a>
+            </div>
+          </div>
+          <div class="work__image-box">
+            <img src="./images/codeporto.png" class="work__image" alt="Project 1" style="width: 80%; margin-top: -60px;"/>
+          </div>
+        </div>
+
+        <!-- Replace the email with yours -->
+    
+      </div>
+    </div>
+  </section>
+
+  <!-- ***** Footer ***** -->
+
+  <footer role="contentinfo" class="footer">
+   
+      <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
+      <p>
+        &copy; 2024 - Web Developer designed by <a href="index.html" class="link">Chasoul</a>.
+      </p>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  <script src="./index.js"></script>
+</body>
+
+</html>
